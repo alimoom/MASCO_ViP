@@ -54,14 +54,14 @@ function logo_play() {
 	echo -e "\e[0m"
 }
 
-function BRWUENteam() {
+function MASCO_VIPteam() {
 	echo -e "\e[0m"
 	green "     >>>>                       We Are Not Attacker                             "
 	green "     >>>>                       We Are Not Alliance                             "
 	white "     >>>>                       We Are Programmer                               "
 	white "     >>>>                       We Are The Best                                 "
 	red   "     >>>>                       We Are Family                                   "
-	red   "     >>>>                       @vip_api                                    "
+	red   "     >>>>                       @ali_moom                                    "
 	echo -e "\e[0m"
 }
 
@@ -80,18 +80,18 @@ update() {
 
 if [ "$1" = "install" ]; then
 	print_logo
-	BRWUENteam
+	MASCO_VIPteam
 	logo_play
 	install
 elif [ "$1" = "update" ]; then
 	logo_play
-	BRWUENteam
+	MASCO_VIPteam
 	update
 	exit 1
 else
 	print_logo
-	BRWUENteam
+	MASCO_VIPteam
 	logo_play
-	green "BRWUEN Manager Bot running..."
+	green "MASCO_VIP Manager Bot running..."
 	lua ./bot/bot.lua
 fi
